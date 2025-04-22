@@ -1,4 +1,4 @@
-#Questão 5
+#  Questão 5
 def encontrar_colunas_poderosas(matriz):
     if not matriz or not matriz[0]:  # Verifica se a matriz é vazia
         return ([], [])
@@ -19,8 +19,8 @@ def encontrar_colunas_poderosas(matriz):
     # Encontra os valores máximos
     max_soma = max(soma)
     max_mul = max(mul)
-
-     # Encontra os índices das colunas com soma e multiplicação máximas
+    
+    # Encontra os índices das colunas com soma e multiplicação máximas
     indices_soma = [i for i in range(num_colunas) if soma[i] == max_soma]
     indices_mul = [i for i in range(num_colunas) if mul[i] == max_mul]
     
@@ -31,23 +31,11 @@ def encontrar_colunas_poderosas(matriz):
     return (indices_soma, indices_mul)
 
 # Exemplo de uso
-'''matriz = [
+matriz = [
     [1, 2, 3, 3],
     [4, 5, 6, 6],
     [7, 8, 9, 9]
 ]
 
 resultado = encontrar_colunas_poderosas(matriz)
-print("Saída:", resultado)'''
-
-
-
-def power_colunas(matriz):
-    '''encontrando índices das colunas mais poderosas.'''
-
-    somas=[]
-    produtos=[]
-    for p in matriz[0]:
-        list.append(somas,0)
-        list.append(produtos,1)
-        
+print("Saída:", resultado)
